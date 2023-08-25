@@ -1,0 +1,23 @@
+{
+  "name": "abata",
+  "version": "1.0.0",
+  "description": "navi like avatar.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel serve index.html"
+  },
+  "keywords": [
+    "[tamagotchi",
+    "virtual",
+    "pet]"
+  ],
+  "author": "Mariano Hurtado de Mendoza Carranza <theunfactoringguru@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "phaser": "^3.60.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  }
+}
