@@ -6,7 +6,16 @@
     <title>Abata</title>
 </head>
 <body>
+    <span id="number">0</span>
     <div id="abata"></div>
+    <button id="counter" onClick ="count()">Click!</button>
     <script src="./game.js" type="module"></script>
+    <script>
+        let numElement = document.getElementById("number");
+        function count(){
+            let num = parseInt(numElement.innerHTML);
+            numElement.innerHTML = num + 1;
+        }
+    </script>
 </body>
 </html>
