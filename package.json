@@ -7,14 +7,15 @@
     "start": "parcel serve index.html"
   },
   "keywords": [
-    "[tamagotchi",
+    "tamagotchi",
     "virtual",
-    "pet]"
+    "pet"
   ],
   "author": "Mariano Hurtado de Mendoza Carranza <theunfactoringguru@gmail.com>",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "phaser": "^3.60.0"
+    "phaser": "^3.60.0",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
     "parcel": "^2.9.3",
