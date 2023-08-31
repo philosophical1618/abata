@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "navi like avatar.",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "parcel serve index.html"
+    "start": "tsc index.ts"
   },
   "keywords": [
     "tamagotchi",
@@ -16,5 +15,9 @@
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   }
 }
