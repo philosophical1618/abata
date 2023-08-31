@@ -1,2 +1,3 @@
-# Abata 
-cualquier cosa que quieran ver actualizado, se van al dev.
+# Abata
+
+Library package to create your own megaman like virtual experience
