@@ -1,6 +1,6 @@
-import Abata from '../classes/basic-programs/Abata';
+import Abata from '../classes/basic-programs/Abata.js';
 
-class Npc extends Abata {
+export default class Dot extends Abata {
     eat(){
         console.log('eat cpu')
     }

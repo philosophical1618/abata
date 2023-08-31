@@ -1,12 +1,15 @@
-import { Enigma } from "./Enigma";
+import Enigma from "./Enigma.js";
 
-export class Nil extends Enigma{
+export default class Nil extends Enigma{
     constructor(generals){
-        generals = []
+        super()
+        this.generals = generals
     }
 
-    disperse(g){
-        g.order();
+    disperse(){
+        this.generals.forEach(g => {
+            g.order();
+        });
         console.log("Message rallied to Dot")
     }
 }

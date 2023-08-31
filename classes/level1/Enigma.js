@@ -1,6 +1,6 @@
-import Cypher from "../level0/Cypher";
+import Cypher from "../level0/Cypher.js";
 
-export class Enigma extends Cypher {
+export default class Enigma extends Cypher {
     order(){
         console.log("something")
     }

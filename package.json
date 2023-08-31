@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "navi like avatar.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "parcel serve index.html"
   },

@@ -1,4 +1,4 @@
-import Abata from "./Abata";
+import Abata from "./Abata.js";
 
 /**
  * Represents a Cypher: a major of the grid
@@ -9,22 +9,21 @@ export default class Cypher extends Abata {
      * @param {Abata[]} factions - an Array of abatas
      */
 
-    constructor(factions){
-        factions = []
+    constructor(soldiers){
+        super()
+        this.soldiers = soldiers
     }
 
-    move(f){
-        f.eat();
+    move(){
         console.log("Moving sir");
     }
 
-    attack(f){
-        f.sleep()
+    attack(){
         console.log("Fire up and good to go!");
     }
 
-    atEase(f){
-        this.move(f)
-        this.move(f)
+    atEase(){
+        this.move()
+        this.attack()
     }
 }

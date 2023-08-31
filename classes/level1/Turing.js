@@ -1,6 +1,6 @@
-import Enigma from './Enigma'
+import Enigma from './Enigma.js'
 
-class Turing extends Enigma {
+export default class Turing extends Enigma {
     order(){
         console.log("empty this.order")
     }
