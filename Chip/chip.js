@@ -1,24 +1,11 @@
 import Phaser from "phaser";
-import WebFontFile from "./WebFontFile";
+import WebFontFile from "../WebFontFile";
 
-import dotPng from "https://pin.it/6SH8BuQ";
+import chipPng from "./Chip/chip.png";
 
 
-var dot;
+var chip;
 
-function addButtons() {
-    const eat = this.add.text(200, 500, 'Eat', {
-        fill: "#00f",
-        fontFamily: '"Press Start 2p"',
-        fontSize: '30px',
-    })
-
-    const sleep = this.add.text(450, 500, 'Sleep', {
-        fill: "#00f",
-        fontFamily: '"Press Start 2p"',
-        fontSize: '30px',
-    })
-}
 new Phaser.Game({
     type: Phaser.AUTO,
     width: 800,
@@ -26,10 +13,20 @@ new Phaser.Game({
     scene: {
         preload: function() {
             this.load.addFile(new WebFontFile(this.load, 'Press Start 2P'))
-            this.load.image('dot', dotPng);
+            this.load.spritesheet('chip', chipPng, {frameWidth: 23, frameHeight: 24});
         },
         create: function() {
-            
+            const eat = this.add.text(200, 500, 'Eat', {
+                fill: "#00f",
+                fontFamily: '"Press Start 2p"',
+                fontSize: '30px',
+            })
+
+            const sleep = this.add.text(450, 500, 'Sleep', {
+                fill: "#00f",
+                fontFamily: '"Press Start 2p"',
+                fontSize: '30px',
+            })
 
             eat.setOrigin(0,0);
             sleep.setOrigin(0,0);
