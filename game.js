@@ -6,7 +6,20 @@ import dotPng from "https://pin.it/6SH8BuQ";
 
 var dot;
 
-function addButtons() {
+const buttonTemp = {
+    fill: 0x0000ff,
+    fontFamily: '"Press Start 2P"',
+    fontSize: '30px',
+    __proto__: {
+        name: "Default",
+        action: function () {
+            console.log("activity")
+        },
+    }
+}
+
+function addButtons(key) {
+    const eat = buttonTemp.__proto__;
     const eat = this.add.text(200, 500, 'Eat', {
         fill: "#00f",
         fontFamily: '"Press Start 2p"',
@@ -29,7 +42,6 @@ new Phaser.Game({
             this.load.image('dot', dotPng);
         },
         create: function() {
-            
 
             eat.setOrigin(0,0);
             sleep.setOrigin(0,0);
