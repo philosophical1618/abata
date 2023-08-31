@@ -1,11 +1,7 @@
-import Abata from '../classes/basic-programs/Abata.js';
+import Abata from './Abata.js';
 
 export default class Dot extends Abata {
-    eat(){
-        console.log('eat cpu')
-    }
-
-    sleep(){
-        console.log('sleep cpu')
-    }
+   do(text = ":3"){
+    console.log(text);
+   }
 }

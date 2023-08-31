@@ -1,9 +1,8 @@
 export default class Abata {
-    eat(){
-        console.log('eat')
+    constructor(name = 'Dot'){
+        this.name = name;
     }
-
-    sleep(){
-        console.log('sleep')
+    do(text){
+        console.log(this.name + " says: " + text)
     }
 }
